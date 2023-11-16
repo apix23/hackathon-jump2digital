@@ -2,6 +2,7 @@
 import { useState } from "react";
 import useQuestion from "../query/use-question";
 import { Teacher } from "../../models/question/teacher.model";
+import { format } from 'date-fns'
 
 type Chat = {
     message: string;
@@ -39,6 +40,6 @@ export default function useChat({ teacher }: Props) {
     return {
         addChat,
         isLoading: isPending,
-        chats,
+        chats: chats.map(({ timestamp, ...data}) => ({sendAt: format(timestamp, 'hh:mm'), ...data})),
     }
 }
