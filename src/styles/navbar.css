@@ -63,16 +63,8 @@ body {
     height: 50px;
   }
   
-  .nav_lng:hover {
-    transform: scale(1.15);
-  }
-  
   .menu-icon {
     display: none;
-  }
-  
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
   }
   
   .nav_item{
@@ -86,6 +78,7 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+  
   .nav-elements ul a.active {
     color: #ffffff;
     font-weight: 500;
@@ -120,7 +113,7 @@ body {
       opacity: 90%;
       right: 0;
       top: 70px;
-      background-color:#ff881a;
+      background-color:#1a85ff;
       width: 0px;
       height: calc(100vh - 70px);
       transition: all 0.3s ease-in;

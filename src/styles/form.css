@@ -4,7 +4,7 @@ section {
 }
 
 form {
-  min-width: 500px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -12,6 +12,10 @@ form {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+form > h1{
+  color: #1a85ff; 
 }
 
 input {
@@ -35,6 +39,17 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color:#1a85ff;
+
+}
+
 .active {
   border-bottom: 1px solid #000;
+}
+
+p{
+  justify-content: center;
+  align-items: center;
+  font-size: small;
 }
