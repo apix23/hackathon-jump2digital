@@ -1,4 +1,4 @@
-import React, {useState}from 'react'; 
+import {useState}from 'react'; 
 import '../styles/navbar.css';
 import {FaBars} from 'react-icons/fa6';
 import {Link} from 'react-scroll';
