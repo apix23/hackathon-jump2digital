@@ -1,12 +1,10 @@
 section {
-  width: 100%;
   display: grid;
   place-items: center;
 }
 
 form {
-  width: 100%;
-  max-width: 500px;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 30px;
