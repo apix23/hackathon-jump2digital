@@ -5,7 +5,7 @@ import { Question } from '../../models/question/question.model';
 export default function useQuestion() {
     return useMutation({
         mutationFn: async (question: Question) => {
-            return await API<{message: string}>('/ask', 'POST', question);
+            return await API<{answer: string}>('/ask', 'POST', question);
         },
         mutationKey: ['ask']
     })
