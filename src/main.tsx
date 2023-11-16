@@ -5,7 +5,7 @@ import './index.css'
 import Providers from './Providers.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-    <Providers>
-    <App />
-    </Providers>
+  <Providers>
+  <App />
+  </Providers>
 )

@@ -1,6 +1,22 @@
+import { useState } from 'react';
 import '../styles/chat.scss'
 
-function Chat({name}) {
+function Chat({ name } : { name : string }) {
+
+  // const [value, setValue] = useState('');
+
+  function sendForm(e: any) {
+    e.preventDefault();
+    console.log('sended')
+  }
+
+  function setMessage(e: any) {
+    e.preventDefault();
+    // e.target.message.value
+    console.log('sended')
+  }
+
+
   return (
       <div className="msger">
         <div className="msger-header">
@@ -12,8 +28,8 @@ function Chat({name}) {
           </div>
         </div>
 
-        <main className="msger-chat">
-          <div className="msg left-msg">
+        <ul className="msger-chat list-reset">
+          <li className="msg left-msg">
             <div className="msg-bubble">
               <div className="msg-info">
                 <div className="msg-info-name">Asistant</div>
@@ -24,9 +40,9 @@ function Chat({name}) {
                 Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
               </div>
             </div>
-          </div>
+          </li>
 
-          <div className="msg right-msg">
+          <li className="msg right-msg">
             <div className="msg-bubble">
               <div className="msg-info">
                 <div className="msg-info-name">{ name }</div>
@@ -37,11 +53,11 @@ function Chat({name}) {
                 You can change your name in JS section!
               </div>
             </div>
-          </div>
-        </main>
+          </li>
+        </ul>
 
-        <form className="msger-form">
-          <input type="text" className="msger-input" placeholder="Enter your message..." />
+        <form onChange={setMessage} onSubmit={sendForm} className="msger-form">
+          <input type="text" name='message' className="msger-input" placeholder="Enter your message..." />
           <button type="submit" className="msger-send-btn">Send</button>
         </form>
       </div>

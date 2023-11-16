@@ -1,7 +1,7 @@
 import "../styles/form.css";
 
 export function Form() {
-  const handleSubmit = (event) => {
+  const handleSubmit = (event : any) => {
     event.preventDefault();
     const data = new FormData(event.target);
     const formJSON = Object.fromEntries(data.entries());

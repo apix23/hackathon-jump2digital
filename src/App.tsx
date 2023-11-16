@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      {/* <Chat name={'Jonni'}/> */}
+      <Chat name={'Jonni'}/>
     </>
   )
 }
