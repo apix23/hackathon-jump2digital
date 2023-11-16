@@ -1,11 +1,12 @@
-import { useQuery } from '@tanstack/react-query';
+import { useMutation } from '@tanstack/react-query';
 import { API } from '../../services/networking/api';
+import { Question } from '../../models/question/question.model';
 
 export default function useQuestion() {
-    return useQuery({
-        queryFn: async () => {
-            return await API<{message: string}>('ask');
+    return useMutation({
+        mutationFn: async (question: Question) => {
+            return await API<{message: string}>('/ask', 'POST', question);
         },
-        queryKey: ['ask']
+        mutationKey: ['ask']
     })
 }
