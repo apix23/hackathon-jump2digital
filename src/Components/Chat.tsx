@@ -29,7 +29,7 @@ function Chat({name}) {
           <div className="msg right-msg">
             <div className="msg-bubble">
               <div className="msg-info">
-                <div className="msg-info-name">Profe name</div>
+                <div className="msg-info-name">{ name }</div>
                 <div className="msg-info-time">12:46</div>
               </div>
 

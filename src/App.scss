@@ -93,18 +93,18 @@ picture {
   border: 0;
 }
 
-.wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  /* if you use position: sticky on the site - remove this setting */
-  background-color: var(--dark-theme);
-  transition: background-color .3s ease-in-out;
-}
+// .wrapper {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%;
+//   position: relative;
+//   margin: 0 auto;
+//   overflow: hidden;
+//   /* if you use position: sticky on the site - remove this setting */
+//   background-color: var(--dark-theme);
+//   transition: background-color .3s ease-in-out;
+// }
 
 // .container {
 //   margin: 0 auto;
