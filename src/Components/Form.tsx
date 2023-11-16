@@ -20,6 +20,7 @@ export function Form() {
   }
 
   return (
+<<<<<<< HEAD:src/Components/Form.jsx
     <section>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h1> Introduce tus datos </h1>
@@ -37,16 +38,24 @@ export function Form() {
                   {errors.teacher?.type === 'pattern' && <p> El nombre no es válido</p>}
         <input type="text" name="barrio" placeholder="Barrio" />
         <input
+=======
+    <section className="section">
+      <form className="form" onSubmit={handleSubmit}>
+        <input className="input" type="text" name="school" placeholder="Nombre del colegio" />
+        <input className="input" type="text" name="teacher" placeholder="Nombre del profesor" />
+        <input className="input" type="text" name="district" placeholder="Barrio y distrito" />
+        <input className="input"
+>>>>>>> d5eb38c0aea388e6005364c1fa1d0cf8ce972baa:src/Components/Form.tsx
           type="text"
           name="classTopic"
           placeholder="Asignatura que imparte"
         />
-        <input
+        <input className="input"
           type="text"
           name="numberStudents"
           placeholder="Numero de alumnos"
         />
-        <button>continuar</button>
+        <button className="btn button">continuar</button>
       </form>
     </section>
   );
